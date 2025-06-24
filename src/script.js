@@ -29,6 +29,9 @@ const rightBtn = document.querySelector(".carousel-btn.right");
 let scrollAmount = 0;
 const scrollStep = 280; // width + gap estimate
 
+track.scrollTo({ left: scrollAmount, behavior: "smooth" });
+
+
 leftBtn.addEventListener("click", () => {
   scrollAmount = Math.max(scrollAmount - scrollStep, 0);
   track.scrollTo({ left: scrollAmount, behavior: "smooth" });
