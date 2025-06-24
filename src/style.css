@@ -145,6 +145,7 @@ h2 {
   border: 2px solid transparent;
   transition: all 0.3s;
   font-weight: 600;
+  display: block;
 }
 
 .connect-btn:hover {
