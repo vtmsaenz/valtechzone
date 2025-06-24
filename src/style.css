@@ -354,9 +354,23 @@ h2 {
     gap: 2rem;
     text-align: left;
   }
+  .carousel {
+    overflow: hidden;
+    position: relative;
+    max-width: 100%;
+  }
 
   .carousel-track {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; /* Firefox */
     justify-content: center;
+  }
+
+  .carousel-track::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
   }
 
   .stack-columns {
