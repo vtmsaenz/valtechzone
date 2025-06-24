@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Valtech Zone</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/script.js"></script>
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="brand">valtech zone</div>
+    <nav id="nav-menu" class="nav-menu">
+      <a href="#about">About</a>
+      <a href="#techstack">Tech Stack</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#writing">Writing</a>
+      <a href="#content">Content</a>
+      <a href="#contact">Contact Me</a>
+      <button id="darkToggle" class="dark-toggle">🌓</button>
+    </nav>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <img src="https://source.unsplash.com/200x200/?portrait" alt="Valerie's Photo" class="profile-img" />
+    <div class="about-text">
+      <h1>Valerie Saenz</h1>
+      <h2>Software Engineer</h2>
+      <a href="https://www.linkedin.com/in/valerie-s-692538a1/" target="_blank" class="connect-btn">Connect with Me</a>
+    </div>
+  </section>
+
+  <!-- Tech Stack -->
+  <section id="techstack" class="techstack">
+    <h2>Tech Stack</h2>
+    <div class="stack-columns">
+      <ul>
+        <li>Insert</li><li>Insert</li><li>Insert</li><li>Insert</li><li>Insert</li>
+      </ul>
+      <ul>
+        <li>Insert</li><li>Insert</li><li>Insert</li><li>Insert</li><li>Insert</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Portfolio Carousel -->
+  <section id="portfolio" class="portfolio">
+    <h2>My Work</h2>
+    <div class="carousel">
+      <button class="carousel-btn left">&#10094;</button>
+      <div class="carousel-track">
+        <div class="project-card" onclick="location.href='project1.html'">
+          <img src="https://source.unsplash.com/300x300/?tech" alt="Project" />
+          <h3>Project Alpha</h3>
+          <p class="tags">React, Node.js, MongoDB</p>
+        </div>
+        <div class="project-card" onclick="location.href='project2.html'">
+          <img src="https://source.unsplash.com/300x300/?code" alt="Project" />
+          <h3>Project Beta</h3>
+          <p class="tags">Vue, Firebase</p>
+        </div>
+        <div class="project-card" onclick="location.href='project3.html'">
+          <img src="https://source.unsplash.com/300x300/?laptop" alt="Project" />
+          <h3>Project Gamma</h3>
+          <p class="tags">Java, Spring Boot</p>
+        </div>
+        <div class="project-card" onclick="location.href='project4.html'">
+          <img src="https://source.unsplash.com/300x300/?software" alt="Project" />
+          <h3>Project Delta</h3>
+          <p class="tags">Python, Django</p>
+        </div>
+      </div>
+      <button class="carousel-btn right">&#10095;</button>
+    </div>
+  </section>
+
+  <!-- Writing (Substack RSS Feed) -->
+  <section id="writing" class="writing">
+    <h2>Tech Writing</h2>
+    <div class="rss-feed">
+      <!-- Placeholder for Substack feed -->
+      <p>Embed feed here (instructions to come)</p>
+    </div>
+  </section>
+
+  <!-- YouTube Section -->
+  <section id="content" class="youtube-content">
+    <h2>Video Content</h2>
+    <div class="video-grid">
+      <img src="https://source.unsplash.com/300x200/?video" alt="Video 1" />
+      <img src="https://source.unsplash.com/300x200/?technology" alt="Video 2" />
+      <img src="https://source.unsplash.com/300x200/?developer" alt="Video 3" />
+    </div>
+    <a href="https://www.youtube.com/@ValTechZone" target="_blank" class="view-more">View More</a>
+  </section>
+
+  <!-- Contact Form -->
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <form action="https://formspree.io/f/xjvnvoyp" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="_replyto" placeholder="Your Email" required />
+      <textarea name="services" placeholder="What services do you need?" required></textarea>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+</body>
+</html>
