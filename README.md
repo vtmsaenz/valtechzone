@@ -1,2 +1,0 @@
-# valtechzone
-Github Profile | Portfolio 
